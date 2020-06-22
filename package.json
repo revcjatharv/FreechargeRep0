@@ -1,0 +1,21 @@
+{
+  "name": "login-reg",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node ./NodeServer/app"
+  },
+  "private": true,
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "core-js": "^2.5.4",
+    "express": "^4.17.1",
+    "helmet": "^3.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.11",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  }
+}

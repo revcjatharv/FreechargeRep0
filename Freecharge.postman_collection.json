@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "f9a2906f-d0c1-4995-8b9c-ed383ea081e5",
+		"name": "Freecharge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/user/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI4NTUwNjAsImV4cCI6MTU5Mjg1NTEyMH0.6tgSYMaWJxaRTr7XPFOn54E1qGOtzHhkXeNR_rm_nqE",
+						"type": "text"
+					},
+					{
+						"key": "refreshAuthorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI4NTQ2MDAsImV4cCI6MTU5Mjg1NTUwMH0.LYZnYYTZ51AFgBUi9EFt6-rfHdimcbvOSaT7Q5Q5U74",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"users"
+					],
+					"query": [
+						{
+							"key": "authorization",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTgwMjg1NzQ2LCJpYXQiOjE1OTI4NDQ1NzR9.SskXhLq_5dmIq6aVtkDkOSi-Eck-rnE8Zrw6kgCWa3k",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/auth//register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullname\":\"athavr The revdikar\",\n    \"email\":\"atharvrev@gmail.com\",\n    \"password\":\"atharvRev1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth//register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/auth//login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"atharv@gmail.com\",\n    \"password\":\"atharvRev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth//login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
